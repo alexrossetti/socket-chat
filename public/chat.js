@@ -1,5 +1,7 @@
 // make connection
-var socket = io.connect("http://localhost:4000");
+//var socket = io.connect("http://127.0.0.1:4000");
+var socket = io.connect("http://alexrossetti.github.io");
+//var socket = io.connect("http://alexrossetti.github.io/socket-chat/public");
 
 // message from client to server
 var $username = $("#username");
