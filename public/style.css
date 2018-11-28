@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+#user-area {
+
+}
+
 #chat-area {
     display: none;
 }
@@ -36,4 +40,19 @@ input{
     font-size: 18px;
     color: white;
     border: 0;
+}
+
+
+@media (max-width: 768px) {
+    #chat-area {
+        margin-bottom: 50px;
+    }
+    
+    #chat-window {
+        height: 300px;
+    }
+
+    #online {
+        margin-bottom: 20px;
+    }    
 }
