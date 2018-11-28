@@ -1,5 +1,9 @@
 // make connection
-var socket = io.connect("http://localhost:5000");
+var socket = io.connect("https://sockets-chat-1.herokuapp.com/", {secure: true});
+
+if (!socket){
+    socket = io.connect("https://localhost:5000");
+}
 
 // message from client to server
 var $username = $("#username");
